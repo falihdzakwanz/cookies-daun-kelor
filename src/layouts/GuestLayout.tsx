@@ -6,6 +6,7 @@ const GuestLayout = () => {
     <div className="flex flex-col w-full">
       <Navbar />
       <main className="flex-grow">
+        test
       </main>
       <Footer />
     </div>
