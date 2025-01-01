@@ -1,12 +1,17 @@
-interface NavLink {
+import React from "react";
+
+interface NavLinkProps {
   href: string;
   title: string;
+  handleClick: (e: React.MouseEvent<HTMLAnchorElement>, id: string) => void;
 }
-const NavLink = ({ href, title }: NavLink) => {
+
+const NavLink: React.FC<NavLinkProps> = ({ href, title, handleClick }) => {
   return (
     <a
       href={href}
-      className="block text-base py-2 transition-all duration-300 hover:text-amber-300 md:text-lg lg:text-xl"
+      onClick={(e) => handleClick(e, href.substring(1))}
+      className="block p-2 transition-all duration-300 hover:text-amber-300"
     >
       {title}
     </a>

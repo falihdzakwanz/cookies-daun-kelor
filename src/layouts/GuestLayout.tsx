@@ -1,12 +1,13 @@
 import Footer from "../components/fragments/Footer";
 import Navbar from "../components/fragments/Navbar";
+import Home from "../Home";
 
 const GuestLayout = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full scroll-smooth">
       <Navbar />
       <main className="flex-grow">
-        test
+        <Home />
       </main>
       <Footer />
     </div>

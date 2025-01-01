@@ -1,8 +1,35 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import NavLink from "./NavLink";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string,
+  ) => {
+    e.preventDefault();
+
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${id}`;
+      return;
+    }
+
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 50;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+
+      history.pushState(null, '', `/#${id}`);
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-50 h-16 w-full text-white bg-green-800">
@@ -11,6 +38,7 @@ const Navbar = () => {
           <a
             href="#home"
             className="text-lg font-bold uppercase md:text-xl lg:text-2xl"
+            onClick={(e) => handleNavClick(e, 'home')}
           >
             Cookies
           </a>
@@ -72,11 +100,12 @@ const Navbar = () => {
             lg:max-h-screen overflow-hidden transition-all duration-300 ease-in-out bg-green-800/80 lg:bg-transparent px-4 md:px-8 lg:px-0 lg:flex lg:items-center lg:justify-evenly lg:w-1/2 lg:h-full
             `}
         >
-          <NavLink href="/" title="Beranda" />
-          <NavLink href="#about" title="Tentang" />
-          <NavLink href="#benefits" title="Manfaat" />
-          <NavLink href="#recipes" title="Resep" />
-          <NavLink href="#contact" title="Kontak" />
+          <NavLink href="#home" title="Beranda" handleClick={handleNavClick} />
+          <NavLink href="#about" title="Tentang" handleClick={handleNavClick} />
+          <NavLink href="#benefits" title="Manfaat" handleClick={handleNavClick} />
+          <NavLink href="#testimonials" title="Testimoni" handleClick={handleNavClick} />
+          <NavLink href="#products" title="Produk" handleClick={handleNavClick} />
+          <NavLink href="#contact" title="Kontak" handleClick={handleNavClick} />
         </div>
       </div>
     </nav>
