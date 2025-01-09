@@ -11,7 +11,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, title, handleClick }) => {
     <a
       href={href}
       onClick={(e) => handleClick(e, href.substring(1))}
-      className="block p-2 transition-all duration-300 hover:text-amber-300"
+      className="block p-2 transition-all duration-300 hover:text-amber-300 lg:text-lg"
     >
       {title}
     </a>

@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
             className="text-lg font-bold uppercase md:text-xl lg:text-2xl"
             onClick={(e) => handleNavClick(e, 'home')}
           >
-            Cookies
+            Mookies
           </a>
           <div className="lg:hidden">
             <button
