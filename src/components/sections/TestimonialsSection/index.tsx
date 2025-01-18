@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "Cookies daun kelor dari Macro Cookies benar-benar enak dan sehat. Anak-anak saya menyukainya dan saya merasa lebih tenang karena mereka mendapatkan nutrisi yang baik.",
+      "Cookies daun kelor dari KKN ITERA benar-benar enak dan sehat. Anak-anak saya menyukainya dan saya merasa lebih tenang karena mereka mendapatkan nutrisi yang baik.",
     name: "Andi",
   },
   {
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     quote:
-      "Saya sangat merekomendasikan Macro Cookies untuk siapa saja yang mencari camilan sehat. Luar biasa!",
+      "Saya sangat merekomendasikan cookies daun kelor untuk siapa saja yang mencari camilan sehat. Luar biasa!",
     name: "Sari",
   },
 ];

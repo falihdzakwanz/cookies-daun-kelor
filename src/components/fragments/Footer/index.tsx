@@ -6,11 +6,11 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div id="contact" className="mb-4 lg:mb-0">
-            <h3 className="text-xl font-bold">Mookies</h3>
+            <h3 className="text-xl font-bold">Cookies</h3>
             <p className="text-gray-300">Nikmati kebaikan alami dari daun kelor dalam setiap gigitan cookies kami.</p>
             <div className="mt-4">
               <h3 className="text-lg font-semibold text-white mb-2">Informasi Kontak</h3>
-              <p className="text-gray-300 mb-1">Email: mookies@gmail.com.com</p>
+              <p className="text-gray-300 mb-1">Email: cookies@gmail.com.com</p>
               <p className="text-gray-300 mb-1">Telepon: +62 812-3456-7890</p>
               <p className="text-gray-300 mb-1">Alamat: Jl. Kesehatan No. 123, Sukabumi, Lampung, Indonesia</p>
             </div>
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="text-center text-gray-300 mt-4">
-          &copy; {new Date().getFullYear()} Mookies. All rights reserved.
+          &copy; {new Date().getFullYear()} Cookies Daun Kelor. All rights reserved.
         </div>
       </div>
     </footer>
