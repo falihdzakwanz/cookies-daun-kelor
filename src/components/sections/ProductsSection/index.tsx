@@ -4,26 +4,11 @@ import { Product } from '../../../types/product';
 
 const products: Product[] = [
   {
-    image: "https://placehold.co/400",
-    name: "Cookies Daun Kelor Original",
+    image: "/products/cookiesDisplay.jpg",
+    name: "Cookies Daun Kelor",
     description: "Cookies daun kelor dengan rasa asli yang kaya akan nutrisi.",
-    price: "Rp50.000",
-    link: "https://id.shp.ee/CuGeA7B",
-  },
-  {
-    image: "https://placehold.co/400",
-    name: "Cookies Daun Kelor dengan Cokelat",
-    description: "Kombinasi sempurna antara daun kelor dan cokelat premium.",
-    price: "Rp60.000",
-    link: "https://id.shp.ee/CuGeA7B",
-  },
-  {
-    image: "https://placehold.co/400",
-    name: "Cookies Daun Kelor dengan Kacang Almond",
-    description:
-      "Cookies renyah dengan tambahan kacang almond yang kaya nutrisi.",
-    price: "Rp65.000",
-    link: "https://id.shp.ee/CuGeA7B",
+    price: "Rp5.000",
+    link: "http://shopee.co.id/cookiesdaunkelor_kkn258",
   },
 ];
 
