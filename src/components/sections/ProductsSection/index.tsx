@@ -7,8 +7,8 @@ const products: Product[] = [
     image: "/products/cookiesDisplay.jpg",
     name: "Cookies Daun Kelor",
     description: "Cookies daun kelor dengan rasa asli yang kaya akan nutrisi.",
-    price: "Rp5.000",
-    link: "http://shopee.co.id/cookiesdaunkelor_kkn258",
+    price: "Rp2.000",
+    link: "https://id.shp.ee/mM3R9i2",
   },
 ];
 
